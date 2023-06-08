@@ -1,1 +1,13 @@
+name: firstworkflow
 
+on:
+  push:
+   branches : ["main"]
+jobs:
+  test-frontend:
+    name: it is testing frontend 
+    runs-on : ubuntu-latest
+    steps:
+      - name: checkout code 
+        uses: actions/checkout@v2
+     
